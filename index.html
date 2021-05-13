@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Ícones-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--jquery-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+    </script>
+
+    <!--Meu Estilo-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<title>Menu Lateral com Submenus</title>
+<body>
+    <div class="btnAbre"><span class="material-icons">menu_open</span></div>
+    <nav class="menuLateral">
+        <div class="titulo"> Classes <span class="material-icons btnFecha">close</span></div>
+        <ul>
+            <li><a href="#">Novice</a></li>
+                <ul>
+                    <li><a href="#" class="acolyte">Acolyte<span class="material-icons seta1">chevron_right</span></a></li>
+                        <ul class="subClassAcolyte">
+                            <li><a href="#">Priest</a></li>
+                            <li><a href="#">Monk</a></li>
+                        </ul>
+                    <li><a href="#" class="magician">Magician<span class="material-icons seta2">chevron_right</span></a></li>
+                        <ul class="subClassMagician"> 
+                            <li><a href="#">Wizard</a></li>
+                            <li><a href="#">Sage</a></li>
+                            </ul>
+                    <li><a href="#" class="swordsman">Swordsman<span class="material-icons seta3">chevron_right</span></a></li>
+                        <ul class="subClassSwordsman">
+                            <li><a href="#">Knight</a></li>
+                            <li><a href="#">Crusader</a></li>
+                        </ul>
+                    <li><a href="#" class="thief">Thief<span class="material-icons seta4">chevron_right</span></a></li>
+                        <ul class="subClassThief">
+                            <li><a href="#">Assassin</a></li>
+                            <li><a href="#">Rogue</a></li>
+                        </ul>
+                    <li><a href="#" class="merchant">Merchant<span class="material-icons seta5">chevron_right</span></a></li>
+                        <ul class="subClassMerchant">
+                            <li><a href="#">Blacksmith</a></li>
+                            <li><a href="#">Alchemist</a></li>
+                        </ul>
+                    <li><a href="#" class="archer">Archer<span class="material-icons seta6">chevron_right</span></a></li>
+                        <ul class="subClassArcher">
+                            <li><a href="#">Hunter</a></li>
+                            <li><a href="#">Bard/Dancer</a></li>
+                        </ul>
+                    <li>
+                </ul>
+        </ul>
+    </nav>  
+    <script type="text/javascript" src="script.js"></script>  
+</body>
+</html>

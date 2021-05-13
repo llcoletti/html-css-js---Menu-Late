@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0%;
+}
+.menuLateral{
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    transition: left 0.5s;
+}
+.menuLateral .titulo{
+    color: white;
+    text-align: Center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 45px;
+    border-bottom: 2px solid rgb(112, 33, 33);    
+}
+
+.menuLateral ul{
+    list-style: none;
+}
+.menuLateral ul li a{
+    color: white;
+    text-decoration: none;   
+    padding-left: 30px;
+    display: block;    
+}
+
+.menuLateral ul li{
+    line-height: 30px;
+    border-bottom: solid white;
+}
+
+.menuLateral ul li a:hover{
+    background-color: rgb(112, 33, 33);
+    transition: 0.3s
+}
+
+.menuLateral ul ul ul li a{
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 60px;
+    background-color: #131313;
+}
+
+.menuLateral ul ul ul{
+    display: none;
+}
+
+.menuLateral ul .subClassAcolyte.mostra{
+    display: block;
+}
+.menuLateral ul .subClassMagician.mostra{
+    display: block;
+}
+.menuLateral ul .subClassSwordsman.mostra{
+    display: block;
+}
+.menuLateral ul .subClassThief.mostra{
+    display: block;
+}
+.menuLateral ul .subClassMerchant.mostra{
+    display: block;
+}
+.menuLateral ul .subClassArcher.mostra{
+    display: block;
+}
+
+.btnAbre{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor:pointer;    
+}
+.btnAbre span{
+    font-size: 35px;
+}
+
+.btnFecha{
+    position:relative;
+    left:10px;
+    top: 3px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btnFecha:hover{
+    background-color: rgb(112, 33, 33);
+    transition: 0.3s
+}
+
+.menuLateral.mostra{
+    left: 0;
+}
+
+.menuLateral ul ul li a span{
+position: absolute;
+left: 200px; 
+transition: 0.1s;
+}
+
+.menuLateral ul li a span.gira{
+    transform: rotate(90deg);
+}
